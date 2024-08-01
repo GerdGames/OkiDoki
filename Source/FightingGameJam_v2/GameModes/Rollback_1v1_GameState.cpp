@@ -14,7 +14,7 @@ UFGJ_GameState* curGameState;
 int inputs[2] = { 0 };
 int disconnect_flags;
 
-//#define SYNC_TEST
+#define SYNC_TEST
 
 enum PlayerConnectState {
 	Connecting = 0,
