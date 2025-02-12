@@ -27,6 +27,15 @@ int FUPlayerInputStruct::ToInt()
     if (LP) {
         input |= (1 << 4);
     }
+    if (HP) {
+        input |= (1 << 5);
+    }
+    if (LK) {
+        input |= (1 << 6);
+    }
+    if (HK) {
+        input |= (1 << 7);
+    }
     
 
     return input;
@@ -39,4 +48,11 @@ void FUPlayerInputStruct::FromInt(int input)
     LFT = CHECK_BIT(input, 2);
     RGT = CHECK_BIT(input, 3);
     LP = CHECK_BIT(input, 4);
+    HP = CHECK_BIT(input, 5);
+    LK = CHECK_BIT(input, 6);
+    HK = CHECK_BIT(input, 7);
 }
+
+/*
+}*/
+

@@ -28,9 +28,17 @@ public:
 	bool RGT;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attack")
 	bool LP;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attack")
+	bool HP;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attack")
+	bool LK;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attack")
+	bool HK;
 
-	int inputNum = 5;
+	int inputNum = 8;
 
 	int ToInt();
 	void FromInt(int input);
+
+	/**/
 };
