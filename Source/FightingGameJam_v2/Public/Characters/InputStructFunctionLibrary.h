@@ -21,4 +21,7 @@ class FIGHTINGGAMEJAM_V2_API UInputStructFunctionLibrary : public UBlueprintFunc
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	static bool Contains(FUPlayerInputStruct input1, FUPlayerInputStruct input2);
 
+	UFUNCTION(BlueprintCallable, Category = "Input_Debug")
+	static int ToInt(FUPlayerInputStruct input);
+
 };
